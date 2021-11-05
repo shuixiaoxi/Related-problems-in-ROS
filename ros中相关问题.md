@@ -87,11 +87,11 @@ Method3：升级gazebo7.0--->7.16
 ```
 
  
-
+```
 13、rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
  出现the following packages/stacks could not have their rosdep keys resolved to system dependencies
  运行
  rosdep update --include-eol-distros
  可以修复问题。
-
+```
  
