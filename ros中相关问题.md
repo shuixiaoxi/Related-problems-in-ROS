@@ -95,5 +95,30 @@ Method3：升级gazebo7.0--->7.16
  可以修复问题。
 ```
  
- 14
+ 14  ROS-Academy-for-Beginners ：gazebo9中模型不显示，但在view的collision中有模型碰撞图
+       在对应模型的dae文件中的
+ ```
+   <transparent opaque="A_ONE">
+              <color>1 1 1 0</color>
+            </transparent>
+ ```
+ 改为
+ ```
+    <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>     ######四个一
+            </transparent>
+            <transparency><float>1</float></transparency>
+ ```
+ 
+ 15  运行py文件报错：/usr/bin/env: "python\r":没有那个文件或目录
+     用VIM打开该文件
+         按一下ESC
+         输入
+         :set ff=unix    #####千万别少了“:”冒号
+         后回车
+         输入
+         :wq
+         回车
+
+ 
  
